@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #map_canvas { height: 100% }
+</style>
+<script type="text/javascript"
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB3X-ZcZ_1K5M9fvHDkOlfUcFZydgq2ByQ&sensor=true">
+</script>
+<script type="text/javascript">
+	var the_map
+	, infowindow
+	, markers = [];
+	
+  function initialize() {
+    var latlng = new google.maps.LatLng(37.786138600000001,-122.40262130000001);
+    var myOptions = {
+      zoom: 12,
+      center: latlng,
+			disableDefaultUI:true,
+			panControl: false,
+		  zoomControl: false,
+		  mapTypeControl: false,
+		  scaleControl: false,
+		  streetViewControl: false,
+		  overviewMapControl: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    the_map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		Ti.App.addEventListener('createAnnotation', createAnnotation);
+		Ti.App.addEventListener('addAnnotation', addAnnotation);
+		Ti.App.addEventListener('removeAllAnnotations', removeAllAnnotations);
+		Ti.App.addEventListener('setLocation', setLocation);
+		Ti.App.addEventListener('selectAnnotation', selectAnnotation);
+  }
+
+	var createAnnotation = function(attrs) {
+ 		if(!infowindow) infowindow = new google.maps.InfoWindow();
+ 		var myLatlng = new google.maps.LatLng(attrs.latitude,attrs.longitude);
+ 		var marker = new google.maps.Marker({ position: myLatlng, title:attrs.title });
+
+ 		google.maps.event.addListener(marker, 'click', function(e) {
+			var img = attrs.leftButton ? '<img src="'+attrs.leftButton+'" style="float:left;" /> ' : "";
+ 	    infowindow.setContent(img+attrs.title);
+ 	    infowindow.open(the_map, this);
+ 	  });
+
+ 		markers.push(marker);
+		Ti.App.fireEvent(attrs.title, {index: markers.indexOf(marker)});
+	}
+	
+	var addAnnotation = function(e) {
+		var marker = markers[e.marker_index];
+		marker.setMap(the_map);
+	}
+	
+	var removeAllAnnotations = function() {
+		for(m in markers) markers[m].setMap(null);
+		markers = [];
+	}
+	
+	var setLocation = function(location) {
+		var latlong = new google.maps.LatLng((location.latitude+location.latitudeDelta), (location.longitude+location.longitudeDelta));
+	  the_map.setCenter(latlong);
+	}
+
+	var selectAnnotation = function(attrs) {
+		var marker = markers[attrs.marker_index];
+		infowindow.setContent('<img src="'+attrs.leftButton+'" style="float:left;" /> '+attrs.title);
+		infowindow.setPosition(marker.getPosition());
+		infowindow.open(the_map, marker);
+	}
+
+</script>
+
+</head>
+<body onload="initialize()">
+  <div id="map_canvas" style="width:100%; height:100%"></div>
+</body>
+</html>

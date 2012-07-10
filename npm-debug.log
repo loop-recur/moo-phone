@@ -1,0 +1,390 @@
+info it worked if it ends with ok
+verbose cli [ 'node',
+verbose cli   '/opt/local/bin/npm',
+verbose cli   'install',
+verbose cli   'jasmine-node',
+verbose cli   '-g' ]
+info using npm@1.0.103
+info using node@v0.4.12
+verbose config file /Users/brian/.npmrc
+verbose config file /opt/local/etc/npmrc
+verbose config file /opt/local/lib/node_modules/npm/npmrc
+verbose into /opt/local/lib [ 'jasmine-node' ]
+verbose cache add jasmine-node
+verbose cache add [ 'jasmine-node', null ]
+silly cache add: name, spec, args [ undefined, 'jasmine-node', [ 'jasmine-node', null ] ]
+verbose parsed url { pathname: 'jasmine-node', href: 'jasmine-node' }
+info addNamed [ 'jasmine-node', '' ]
+verbose addNamed [ null, '' ]
+verbose GET jasmine-node
+verbose raw, before any munging jasmine-node
+verbose url resolving [ 'https://registry.npmjs.org/', './jasmine-node' ]
+verbose url resolved https://registry.npmjs.org/jasmine-node
+verbose etag "9E7W7C19NUKJULJ9RYY7YUMBW"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"9E7W7C19NUKJULJ9RYY7YUMBW"',
+silly get cb     date: 'Tue, 10 Jul 2012 18:19:59 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jasmine-node from cache
+verbose GET jasmine-node/1.0.26
+verbose raw, before any munging jasmine-node/1.0.26
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './jasmine-node/1.0.26' ]
+verbose url resolved https://registry.npmjs.org/jasmine-node/1.0.26
+verbose etag "9E7W7C19NUKJULJ9RYY7YUMBW"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"9E7W7C19NUKJULJ9RYY7YUMBW"',
+silly get cb     date: 'Tue, 10 Jul 2012 18:20:00 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jasmine-node/1.0.26 from cache
+verbose bin dist [ '0.4-ares1.7.4-ev4.4-openssl1.0.0d-v83.1.8.26-darwin-11.3.0',
+verbose bin dist   { shasum: 'f96e48ed636b048621afca354096b86d4155a9eb',
+verbose bin dist     tarball: 'http://registry.npmjs.org/jasmine-node/-/jasmine-node-1.0.26.tgz' } ]
+silly testEngine { name: 'jasmine-node',
+silly testEngine   version: '1.0.26',
+silly testEngine   description: 'DOM-less simple JavaScript BDD testing framework for Node',
+silly testEngine   homepage: 
+silly testEngine    [ 'http://pivotal.github.com/jasmine',
+silly testEngine      'https://github.com/mhevery/jasmine-node' ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/mhevery/jasmine-node.git' },
+silly testEngine   keywords: [ 'testing', 'bdd' ],
+silly testEngine   author: { name: 'Misko Hevery', email: 'misko@hevery.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Mike Swift',
+silly testEngine        email: 'theycallmeswift@gmail.com',
+silly testEngine        url: 'http://theycallmeswift.com' } ],
+silly testEngine   maintainers: 'Martin Häger <martin.haeger@gmail.com>',
+silly testEngine   licenses: [ 'MIT' ],
+silly testEngine   dependencies: 
+silly testEngine    { 'coffee-script': '>=1.0.1',
+silly testEngine      'jasmine-reporters': '>=0.2.0',
+silly testEngine      requirejs: '>=0.27.1',
+silly testEngine      walkdir: '>= 0.0.1',
+silly testEngine      underscore: '>= 1.3.1' },
+silly testEngine   bin: { 'jasmine-node': 'bin/jasmine-node' },
+silly testEngine   main: 'lib/jasmine-node',
+silly testEngine   scripts: { test: 'node lib/jasmine-node/cli.js spec' },
+silly testEngine   _npmUser: { name: 'undefined', email: undefined },
+silly testEngine   _id: 'jasmine-node@1.0.26',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/brian/.npm/jasmine-node/1.0.26/package/package.json
+verbose loadDefaults jasmine-node@1.0.26
+silly resolved [ { name: 'jasmine-node',
+silly resolved     version: '1.0.26',
+silly resolved     description: 'DOM-less simple JavaScript BDD testing framework for Node',
+silly resolved     homepage: 
+silly resolved      [ 'http://pivotal.github.com/jasmine',
+silly resolved        'https://github.com/mhevery/jasmine-node' ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/mhevery/jasmine-node.git' },
+silly resolved     keywords: [ 'testing', 'bdd' ],
+silly resolved     author: { name: 'Misko Hevery', email: 'misko@hevery.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Mike Swift',
+silly resolved          email: 'theycallmeswift@gmail.com',
+silly resolved          url: 'http://theycallmeswift.com' } ],
+silly resolved     maintainers: 'Martin Häger <martin.haeger@gmail.com>',
+silly resolved     licenses: [ 'MIT' ],
+silly resolved     dependencies: 
+silly resolved      { 'coffee-script': '>=1.0.1',
+silly resolved        'jasmine-reporters': '>=0.2.0',
+silly resolved        requirejs: '>=0.27.1',
+silly resolved        walkdir: '>= 0.0.1',
+silly resolved        underscore: '>= 1.3.1' },
+silly resolved     bin: { 'jasmine-node': 'bin/jasmine-node' },
+silly resolved     main: 'lib/jasmine-node',
+silly resolved     scripts: { test: 'node lib/jasmine-node/cli.js spec' },
+silly resolved     _npmUser: { name: 'undefined', email: undefined },
+silly resolved     _id: 'jasmine-node@1.0.26',
+silly resolved     devDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.103',
+silly resolved     _nodeVersion: 'v0.4.12',
+silly resolved     _defaultsLoaded: true } ]
+info into /opt/local/lib jasmine-node@1.0.26
+info installOne jasmine-node@1.0.26
+info unbuild /opt/local/lib/node_modules/jasmine-node
+verbose from cache /Users/brian/.npm/jasmine-node/1.0.26/package/package.json
+verbose mkdir (expected) error ENOENT, No such file or directory '/opt/local/lib/node_modules/___jasmine-node.npm'
+verbose mkdir done: /opt/local/lib/node_modules/___jasmine-node.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /opt/local/lib/node_modules/jasmine-node
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ '/usr/bin/bsdtar',
+silly spawning   [ '-zmvxpf',
+silly spawning     '/Users/brian/.npm/jasmine-node/1.0.26/package.tgz' ],
+silly spawning   '/opt/local/lib/node_modules/___jasmine-node.npm' ]
+silly tar err x package/.npmignore
+silly tar err x package/.travis.yml
+silly tar err x package/LICENSE
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/specs.sh
+silly tar err x package/bin/jasmine-node
+silly tar err x package/scripts/specs
+silly tar err x package/spec-requirejs/requirejs.spec.js
+silly tar err x package/spec-requirejs/requirejs.sut.js
+silly tar err x package/lib/jasmine-node/async-callback.js
+silly tar err x package/lib/jasmine-node/autotest.js
+silly tar err x package/lib/jasmine-node/cli.js
+silly tar err x package/lib/jasmine-node/index.js
+silly tar err x package/lib/jasmine-node/jasmine-2.0.0.rc1.js
+silly tar err x package/lib/jasmine-node/reporter.js
+silly tar err x package/lib/jasmine-node/requirejs-runner.js
+silly tar err x package/lib/jasmine-node/requirejs-spec-loader.js
+silly tar err x package/lib/jasmine-node/requirejs-wrapper-template.js
+silly tar err x package/lib/jasmine-node/spec-collection.js
+silly tar err x package/spec/async-callback_spec.js
+silly tar err x package/spec/AsyncSpec.coffee
+silly tar err x package/spec/CoffeeSpec.coffee
+silly tar err x package/spec/GrammarHelper.coffee
+silly tar err x package/spec/helper_spec.js
+silly tar err x package/spec/HelperSpec.coffee
+silly tar err x package/spec/reporter_spec.js
+silly tar err x package/spec/sample_helper.js
+silly tar err x package/spec/SampleSpecs.js
+silly tar err x package/spec/TestSpec.js
+silly tar err x package/spec/nested.js/NestedSpec.js
+silly tar err x package/spec/nested/NestedSpec.js
+silly tar err x package/spec/nested/uber-nested/UberNestedSpec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/.npmignore
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/.travis.yml
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/LICENSE
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/package.json
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/README.md
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/specs.sh
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/bin
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/bin/jasmine-node
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/scripts
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/scripts/specs
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec-requirejs
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec-requirejs/requirejs.spec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec-requirejs/requirejs.sut.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/async-callback.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/autotest.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/cli.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/index.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/jasmine-2.0.0.rc1.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/reporter.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/requirejs-runner.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/requirejs-spec-loader.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/requirejs-wrapper-template.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/lib/jasmine-node/spec-collection.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/async-callback_spec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/AsyncSpec.coffee
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/CoffeeSpec.coffee
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/GrammarHelper.coffee
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/helper_spec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/HelperSpec.coffee
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/reporter_spec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/sample_helper.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/SampleSpecs.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/TestSpec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/nested.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/nested.js/NestedSpec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/nested
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/nested/NestedSpec.js
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/nested/uber-nested
+silly asyncMap in gTP /opt/local/lib/node_modules/___jasmine-node.npm/package/spec/nested/uber-nested/UberNestedSpec.js
+verbose gunzed /opt/local/lib/node_modules/___jasmine-node.npm/package
+verbose rm'ed /opt/local/lib/node_modules/jasmine-node
+verbose renamed [ '/opt/local/lib/node_modules/___jasmine-node.npm/package',
+verbose renamed   '/opt/local/lib/node_modules/jasmine-node' ]
+silly testEngine { name: 'jasmine-node',
+silly testEngine   version: '1.0.26',
+silly testEngine   description: 'DOM-less simple JavaScript BDD testing framework for Node',
+silly testEngine   homepage: 
+silly testEngine    [ 'http://pivotal.github.com/jasmine',
+silly testEngine      'https://github.com/mhevery/jasmine-node' ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/mhevery/jasmine-node.git' },
+silly testEngine   keywords: [ 'testing', 'bdd' ],
+silly testEngine   author: { name: 'Misko Hevery', email: 'misko@hevery.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Mike Swift',
+silly testEngine        email: 'theycallmeswift@gmail.com',
+silly testEngine        url: 'http://theycallmeswift.com' } ],
+silly testEngine   maintainers: 'Martin Häger <martin.haeger@gmail.com>',
+silly testEngine   licenses: [ 'MIT' ],
+silly testEngine   dependencies: 
+silly testEngine    { 'coffee-script': '>=1.0.1',
+silly testEngine      'jasmine-reporters': '>=0.2.0',
+silly testEngine      requirejs: '>=0.27.1',
+silly testEngine      walkdir: '>= 0.0.1',
+silly testEngine      underscore: '>= 1.3.1' },
+silly testEngine   bin: { 'jasmine-node': 'bin/jasmine-node' },
+silly testEngine   main: 'lib/jasmine-node',
+silly testEngine   scripts: { test: 'node lib/jasmine-node/cli.js spec' },
+silly testEngine   _npmUser: { name: 'undefined', email: undefined },
+silly testEngine   _id: 'jasmine-node@1.0.26',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _nodeVersion: 'v0.4.12',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /opt/local/lib/node_modules/jasmine-node/package.json
+verbose loadDefaults jasmine-node@1.0.26
+info preinstall jasmine-node@1.0.26
+verbose from cache /opt/local/lib/node_modules/jasmine-node/package.json
+verbose into /opt/local/lib/node_modules/jasmine-node [ 'coffee-script@>=1.0.1',
+verbose into /opt/local/lib/node_modules/jasmine-node   'jasmine-reporters@>=0.2.0',
+verbose into /opt/local/lib/node_modules/jasmine-node   'requirejs@>=0.27.1',
+verbose into /opt/local/lib/node_modules/jasmine-node   'walkdir@>= 0.0.1',
+verbose into /opt/local/lib/node_modules/jasmine-node   'underscore@>= 1.3.1' ]
+verbose cache add coffee-script@>=1.0.1
+verbose cache add [ 'coffee-script@>=1.0.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'coffee-script@>=1.0.1',
+silly cache add: name, spec, args   [ 'coffee-script@>=1.0.1', null ] ]
+verbose parsed url { pathname: 'coffee-script@', href: 'coffee-script@' }
+silly cache add: name, spec, args [ 'coffee-script',
+silly cache add: name, spec, args   '>=1.0.1',
+silly cache add: name, spec, args   [ 'coffee-script', '>=1.0.1' ] ]
+verbose parsed url { pathname: '=1.0.1', href: '=1.0.1' }
+info addNamed [ 'coffee-script', '>=1.0.1' ]
+verbose addNamed [ null, '>=1.0.1' ]
+verbose cache add jasmine-reporters@>=0.2.0
+verbose cache add [ 'jasmine-reporters@>=0.2.0', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'jasmine-reporters@>=0.2.0',
+silly cache add: name, spec, args   [ 'jasmine-reporters@>=0.2.0', null ] ]
+verbose parsed url { pathname: 'jasmine-reporters@',
+verbose parsed url   href: 'jasmine-reporters@' }
+silly cache add: name, spec, args [ 'jasmine-reporters',
+silly cache add: name, spec, args   '>=0.2.0',
+silly cache add: name, spec, args   [ 'jasmine-reporters', '>=0.2.0' ] ]
+verbose parsed url { pathname: '=0.2.0', href: '=0.2.0' }
+info addNamed [ 'jasmine-reporters', '>=0.2.0' ]
+verbose addNamed [ null, '>=0.2.0' ]
+verbose cache add requirejs@>=0.27.1
+verbose cache add [ 'requirejs@>=0.27.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'requirejs@>=0.27.1',
+silly cache add: name, spec, args   [ 'requirejs@>=0.27.1', null ] ]
+verbose parsed url { pathname: 'requirejs@', href: 'requirejs@' }
+silly cache add: name, spec, args [ 'requirejs',
+silly cache add: name, spec, args   '>=0.27.1',
+silly cache add: name, spec, args   [ 'requirejs', '>=0.27.1' ] ]
+verbose parsed url { pathname: '=0.27.1', href: '=0.27.1' }
+info addNamed [ 'requirejs', '>=0.27.1' ]
+verbose addNamed [ null, '>=0.27.1' ]
+verbose cache add walkdir@>= 0.0.1
+verbose cache add [ 'walkdir@>= 0.0.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'walkdir@>= 0.0.1',
+silly cache add: name, spec, args   [ 'walkdir@>= 0.0.1', null ] ]
+verbose parsed url { pathname: 'walkdir@', href: 'walkdir@' }
+silly cache add: name, spec, args [ 'walkdir', '>= 0.0.1', [ 'walkdir', '>= 0.0.1' ] ]
+verbose parsed url { pathname: '=', href: '=' }
+info addNamed [ 'walkdir', '>= 0.0.1' ]
+verbose addNamed [ null, '>=0.0.1' ]
+verbose cache add underscore@>= 1.3.1
+verbose cache add [ 'underscore@>= 1.3.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'underscore@>= 1.3.1',
+silly cache add: name, spec, args   [ 'underscore@>= 1.3.1', null ] ]
+verbose parsed url { pathname: 'underscore@', href: 'underscore@' }
+silly cache add: name, spec, args [ 'underscore',
+silly cache add: name, spec, args   '>= 1.3.1',
+silly cache add: name, spec, args   [ 'underscore', '>= 1.3.1' ] ]
+verbose parsed url { pathname: '=', href: '=' }
+info addNamed [ 'underscore', '>= 1.3.1' ]
+verbose addNamed [ null, '>=1.3.1' ]
+verbose GET coffee-script
+verbose raw, before any munging coffee-script
+verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+verbose url resolved https://registry.npmjs.org/coffee-script
+verbose GET jasmine-reporters
+verbose raw, before any munging jasmine-reporters
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './jasmine-reporters' ]
+verbose url resolved https://registry.npmjs.org/jasmine-reporters
+verbose GET requirejs
+verbose raw, before any munging requirejs
+verbose url resolving [ 'https://registry.npmjs.org/', './requirejs' ]
+verbose url resolved https://registry.npmjs.org/requirejs
+verbose GET walkdir
+verbose raw, before any munging walkdir
+verbose url resolving [ 'https://registry.npmjs.org/', './walkdir' ]
+verbose url resolved https://registry.npmjs.org/walkdir
+verbose GET underscore
+verbose raw, before any munging underscore
+verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+verbose url resolved https://registry.npmjs.org/underscore
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"1G58UQ3SN33IDQ6LSEMJD2KQY"',
+silly get cb     date: 'Tue, 10 Jul 2012 18:20:00 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '4922' } ]
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"62N3863X7Z5GSM3Y6QHNK85ED"',
+silly get cb     date: 'Tue, 10 Jul 2012 18:20:00 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '3087' } ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/.npm/walkdir'
+verbose mkdir (expected) error ENOENT, No such file or directory '/Users/brian/.npm/jasmine-reporters'
+verbose mkdir done: /Users/brian/.npm/walkdir 755
+verbose mkdir done: /Users/brian/.npm/jasmine-reporters 755
+verbose about to build /opt/local/lib/node_modules/jasmine-node
+ERR! error installing jasmine-node@1.0.26 Error: Not found: walkdir@'>=0.0.1'
+ERR! error installing jasmine-node@1.0.26 Valid install targets:
+ERR! error installing jasmine-node@1.0.26 ["latest"]
+ERR! error installing jasmine-node@1.0.26     at installTargetsError (/opt/local/lib/node_modules/npm/lib/cache.js:410:10)
+ERR! error installing jasmine-node@1.0.26     at /opt/local/lib/node_modules/npm/lib/cache.js:403:17
+ERR! error installing jasmine-node@1.0.26     at saved (/opt/local/lib/node_modules/npm/lib/utils/npm-registry-client/get.js:136:7)
+ERR! error installing jasmine-node@1.0.26     at cb (/opt/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:36:9)
+info unbuild /opt/local/lib/node_modules/jasmine-node
+verbose from cache /opt/local/lib/node_modules/jasmine-node/package.json
+info preuninstall jasmine-node@1.0.26
+verbose GET jasmine-reporters/0.2.1
+verbose raw, before any munging jasmine-reporters/0.2.1
+verbose url resolving [ 'https://registry.npmjs.org/',
+verbose url resolving   './jasmine-reporters/0.2.1' ]
+verbose url resolved https://registry.npmjs.org/jasmine-reporters/0.2.1
+info uninstall jasmine-node@1.0.26
+verbose unbuild jasmine-node@1.0.26 [ true,
+verbose unbuild jasmine-node@1.0.26   '/opt/local/lib/node_modules',
+verbose unbuild jasmine-node@1.0.26   '/opt/local/lib/node_modules' ]
+verbose binRoot [ '/opt/local/bin',
+verbose binRoot   { 'jasmine-node': 'bin/jasmine-node' } ]
+info postuninstall jasmine-node@1.0.26
+verbose installOne cb jasmine-node@1.0.26
+ERR! Error: Not found: walkdir@'>=0.0.1'
+ERR! Valid install targets:
+ERR! ["latest"]
+ERR!     at installTargetsError (/opt/local/lib/node_modules/npm/lib/cache.js:410:10)
+ERR!     at /opt/local/lib/node_modules/npm/lib/cache.js:403:17
+ERR!     at saved (/opt/local/lib/node_modules/npm/lib/utils/npm-registry-client/get.js:136:7)
+ERR!     at cb (/opt/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:36:9)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/opt/local/bin/npm" "install" "jasmine-node" "-g"
+ERR! cwd /Users/brian/Documents/Titanium Studio Workspace/moocho
+ERR! node -v v0.4.12
+ERR! npm -v 1.0.103
+verbose exit [ 1, true ]
